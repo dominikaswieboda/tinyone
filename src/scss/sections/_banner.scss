@@ -1,0 +1,102 @@
+.banner {
+  .owl-carousel .owl-item img {
+    width: 317px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 956px) {
+      display: block;
+    }
+  }
+  &__content {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    @media (max-width: 768px) {
+      padding-top: 0;
+    }
+
+    &__text {
+      margin-right: 173px;
+      padding-top: 76px;
+      @media (max-width: 1280px) {
+        margin-right: 70px;
+      }
+      @media (max-width: 956px) {
+        margin-right: 0;
+      }
+    }
+    &__icons {
+      i {
+        font-size: 48px;
+        & + i {
+          margin-left: 27px;
+          margin-top: 36px;
+        }
+      }
+    }
+    &__image {
+      max-width: 100%;
+      img {
+        width: 317px;
+        margin-top: 5px;
+        margin-right: 40px;
+        @media (max-width: 956px) {
+          width: 200px;
+          margin: 80px auto 0;
+        }
+      }
+    }
+  }
+
+  // Aboout: Slider
+  &__slogan {
+    margin: 0;
+    text-align: center;
+    padding-top: 208px;
+    .banner-title {
+      h2 {
+        font-size: 49px;
+        line-height: 40px;
+        @media (max-width: 768px) {
+          line-height: 50px;
+        }
+      }
+    }
+    .lead {
+      line-height: 24px;
+      padding: 26px 60px;
+      @media (max-width: 768px) {
+        padding: 26px 0;
+      }
+    }
+  }
+  &__icons {
+    span {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 70px;
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 50%;
+      text-align: center;
+      & + span {
+        margin-left: 27px;
+        margin-right: 9px;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 32px;
+    }
+  }
+  .owl-dots {
+    margin-top: 145px;
+    padding-bottom: 47px;
+  }
+}
